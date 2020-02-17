@@ -1,0 +1,25 @@
+# MAVEN
+talentManagement-dao/target/
+talentManagement-domaine/target/
+talentManagement-service/target/
+talentManagement-web/target/
+
+# ECLIPSE
+.settings/
+.project
+
+talentManagement-dao/.settings/
+talentManagement-dao/.classpath
+talentManagement-dao/.project
+
+talentManagement-domaine/.settings/
+talentManagement-domaine/.classpath
+talentManagement-domaine/.project
+
+talentManagement-service/.settings/
+talentManagement-service/.classpath
+talentManagement-service/.project
+
+talentManagement-web/.settings/
+talentManagement-web/.classpath
+talentManagement-web/.project

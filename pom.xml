@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- ************************************ -->
+	<!-- INFORMATIONS DU PROJET -->
+	<!-- ************************************ -->
+	<!-- ******** Informations MAVEN ******** -->
+	<groupId>sn.seckader</groupId>
+	<artifactId>talentManagement</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0-SNAPSHOT</version>
+
+	<!-- ******** Informations Generales ******** -->
+	<name>talentManagement</name>
+	<url>http://www.example.com</url>
+
+	<!-- ************************************ -->
+	<!-- PROPRIETES -->
+	<!-- ************************************ -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+	</properties>
+
+	<!-- ************************************ -->
+	<!-- DISTRIBUTION MANAGEMENT -->
+	<!-- ************************************ -->
+	<distributionManagement>
+
+	</distributionManagement>
+
+	<!-- ************************************ -->
+	<!-- GESTION DES DEPENDANCES -->
+	<!-- ************************************ -->
+	<dependencyManagement>
+		<dependencies>
+			<!-- Modules -->
+			<dependency>
+				<groupId>sn.seckader</groupId>
+				<artifactId>talentManagement-domaine</artifactId>
+				<version>1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>sn.seckader</groupId>
+				<artifactId>talentManagement-dao</artifactId>
+				<version>1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>sn.seckader</groupId>
+				<artifactId>talentManagement-service</artifactId>
+				<version>1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>sn.seckader</groupId>
+				<artifactId>talentManagement-web</artifactId>
+				<version>1.0-SNAPSHOT</version>
+			</dependency>
+
+			<!-- Bibliotheques tierces -->
+			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-api</artifactId>
+				<version>7.0</version>
+				<scope>provided</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<!-- ************************************ -->
+	<!-- DEPENDANCES -->
+	<!-- ************************************ -->
+	<dependencies>
+
+	</dependencies>
+
+	<!-- ************************************ -->
+	<!-- BUILD -->
+	<!-- ************************************ -->
+	<build>
+		<!-- ************************************ -->
+		<!-- GESTION DES PLUGINS -->
+		<!-- ************************************ -->
+		<pluginManagement>
+
+		</pluginManagement>
+	</build>
+
+	<!-- ************************************ -->
+	<!-- MODULES -->
+	<!-- ************************************ -->
+	<modules>
+		<module>talentManagement-dao</module>
+		<module>talentManagement-domaine</module>
+		<module>talentManagement-service</module>
+		<module>talentManagement-web</module>
+	</modules>
+
+</project>

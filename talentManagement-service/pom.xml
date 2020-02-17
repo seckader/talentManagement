@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- ******** Projet parent ******** -->
+	<parent>
+		<artifactId>talentManagement</artifactId>
+		<groupId>sn.seckader</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<!-- ************************************ -->
+	<!-- INFORMATIONS DU PROJET -->
+	<!-- ************************************ -->
+	<!-- ******** Informations MAVEN ******** -->
+	<artifactId>talentManagement-service</artifactId>
+	<packaging>ejb</packaging>
+	<name>talentManagement-service</name>
+
+	<!-- ************************************ -->
+	<!-- PROPRIETES -->
+	<!-- ************************************ -->
+	<properties>
+		<endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<!-- ************************************ -->
+	<!-- DEPENDANCES -->
+	<!-- ************************************ -->
+	<dependencies>
+		<!-- Modules -->
+		<dependency>
+			<groupId>sn.seckader</groupId>
+			<artifactId>talentManagement-domaine</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>sn.seckader</groupId>
+			<artifactId>talentManagement-dao</artifactId>
+		</dependency>
+		<!-- Bibliothèques tierces -->
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<!-- ************************************ -->
+	<!-- BUILD -->
+	<!-- ************************************ -->
+	<build>
+
+	</build>
+
+</project>
